@@ -1,0 +1,79 @@
+/* Apply gradient background and full viewport height */
+body {
+    background: linear-gradient(to right, #306cc7, #26cae3); /* Gradient from pink to orange */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Default font */
+    color: white; /* Text color */
+}
+
+/* Main container that holds everything */
+.container {
+    display: flex;
+    flex-direction: column; /* Align button and div in a column */
+    justify-content: center; /* Center align the content vertically */
+    align-items: center; /* Center align the content horizontally */
+    text-align: center;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+/* Style for buttons */
+button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem; /* Add space between button and div */
+}
+
+/* Hover effect on the button */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for divs (content display areas) */
+div {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slight transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for subtle depth */
+    font-size: 1.2rem;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+@media (max-width: 600px) {
+    body {
+        background: linear-gradient(to top, #0e49c6, #29a9ca); /* Slight change for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font for smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text */
+        padding: 10px 20px; /* Smaller padding */
+    }
+
+    div {
+        font-size: 1rem; /* Smaller text size for div */
+        padding: 12px; /* Smaller padding for div */
+    }
+}
